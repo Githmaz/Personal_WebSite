@@ -1,13 +1,16 @@
 .navbar {
-  margin-top: 1.5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #e3f2fd;
 }
 
 ul.justify-content-center .nav-link {
-  font-size: 20px; /* Adjust the font size as needed */
-  margin-right: 2vw; /* 2% of the viewport width */
-  margin-left: 2vw; /* 2% of the viewport width */
+  font-size: 15px; /* Adjust the font size as needed */
+  margin-right: 0.9vw; /* 2% of the viewport width */
+  margin-left: 0.9vw; /* 2% of the viewport width */
+  color: #000000;
 }
 .header {
   background-size: cover;
