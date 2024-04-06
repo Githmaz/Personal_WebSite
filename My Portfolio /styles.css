@@ -1,19 +1,19 @@
 .navbar {
-  padding-top: 0.75%;
-  padding-bottom: 0.75%;
-  padding-left: 10%;
-  padding-right: 10%;
-  background-color: #e3f2fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #e3f2fd00;
 }
 
 ul.justify-content-center .nav-link {
   font-size: 15px; /* Adjust the font size as needed */
-  margin-right: 0.9vw; /* 2% of the viewport width */
-  margin-left: 0.9vw; /* 2% of the viewport width */
-  color: #000000;
+  margin-right: 0.8vw; /* 2% of the viewport width */
+  margin-left: 0.8vw; /* 2% of the viewport width */
+  color: inherit;
 }
 .header {
+  background: url("/img/banner-image-2.jpg");
   background-size: cover;
-  background-position: center;
   height: 100vh; /* Set header height to full viewport height */
 }
