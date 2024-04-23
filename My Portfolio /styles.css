@@ -1,19 +1,33 @@
-.navbar {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 15%;
-  padding-right: 15%;
-  background-color: #e3f2fd00;
-}
-
-ul.justify-content-center .nav-link {
-  font-size: 15px; /* Adjust the font size as needed */
-  margin-right: 0.8vw; /* 2% of the viewport width */
-  margin-left: 0.8vw; /* 2% of the viewport width */
-  color: inherit;
-}
-.header {
+header {
   background: url("/img/banner-image-2.jpg");
   background-size: cover;
-  height: 100vh; /* Set header height to full viewport height */
+  height: 100vh;
+  /* Set header height to full viewport height */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
+
+ .navbar{
+
+}
+
+.nav-item{
+  list-style: none;
+} 
+
+.nav-mid .nav-item{
+} 
+
+.nav-link{
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-mid .nav-link{
+  color: rgb(10, 7, 68);
+} 
+.nav-right .nav-link{
+  color: rgb(2, 15, 15);
+} 
