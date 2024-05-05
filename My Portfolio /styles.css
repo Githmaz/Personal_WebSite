@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jacquard+24&family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Ink&family=Comfortaa:wght@300..700&family=Jacquard+24&family=Jersey+25&display=swap');
 /* -------------- HEADER -------------------- */
 header {
   background: url("/img/banner-image-2.jpg");
@@ -17,18 +20,20 @@ header {
   
 }
 .navbar-container{
-  width: 100%;
+  width: 85vw;
   height: 60px;
-  max-width: 1400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   margin: 0px auto;
 }
 
 /* logo */
 .nav-logo{
-  font-size: 1.5rem;
+  font-family: "Blaka Ink", system-ui;
+  /* font-family: "Jacquard 24", system-ui; */
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -70,6 +75,85 @@ header {
   cursor: pointer;
   display: none;
 }
+/* Header context */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Aligns content vertically center */
+  height: 100%; /* Takes full height of the parent */
+  margin-top: -100px;
+  padding-right: 750px; /* Adjusts the left padding to lean content to the left */
+}
+.header-name{
+  font-size: 4vw;
+  font-family: "Jersey 25", sans-serif;
+  margin-left: 10vw;
+}
+
+.header-subtopic{
+  font-size: 1vw;
+  margin-left: 10vw;
+  font-family: "Comfortaa", sans-serif;
+  color: rgba(0, 0, 0, 0.601);
+}
+
+
+/* about me  */
+
+.about-me-section {
+  background: url('/img/banner-image-2.jpg') no-repeat center center/cover;
+  
+  color: #000000;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  height: 100vh;
+  padding: 20px;
+  position: relative; /* Needed for overlay */
+}
+
+.about-me-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: -1; /* Ensures the overlay is behind the content */
+}
+
+.about-me-content {
+  max-width: 800px;
+  z-index: 2; /* Ensures content is above the overlay */
+}
+
+.about-me-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-me-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
 
 @media (max-width:768px) {
   .nav-mid, .nav-right{
