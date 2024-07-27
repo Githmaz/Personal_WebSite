@@ -3,9 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jacquard+24&family=Jersey+25&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blaka+Ink&family=Comfortaa:wght@300..700&family=Jacquard+24&family=Jersey+25&display=swap');
 /* -------------- HEADER -------------------- */
+
+body{
+  margin: 0;
+}
 header {
   /* background: url("/img/banner-image-2.jpg"); */
-  background-color: bisque;
+  background: #c9c9c9;
   background-size: cover;
   height: 100vh;
   margin: 0;
@@ -33,7 +37,7 @@ header {
 .nav-logo{
   font-family: "Blaka Ink", system-ui;
   /* font-family: "Jacquard 24", system-ui; */
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -85,11 +89,20 @@ header {
 }
 
 .header-name{
-  font-size: 4vw;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 6vw;
   font-family: "Jersey 25", sans-serif;
   margin-left: 10vw;
 }
-
+.header-name div {
+  flex: 0 1 auto; /* Adjust to ensure proper horizontal alignment */
+  text-align: left;
+}
+.header-name .first-name {
+  margin-right:1vw; /* Add a small space between first and last name */
+}
 .header-subtopic{
   font-size: 1vw;
   margin-left: 10vw;
@@ -184,7 +197,7 @@ header {
 .skill h3 {
   font-size: 1.2rem;
 }
-@media (max-width:768px) {
+@media (max-width:1024px) {
 
     /* logo */
   .nav-logo{
@@ -194,7 +207,9 @@ header {
   .nav-mid, .nav-right{
     display: none;
   }
-
+  .header-name{
+    font-size: 9vw;
+  }
   .nav-menu-button{
     display: block;
   }
